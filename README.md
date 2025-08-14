@@ -61,6 +61,27 @@ sudo nano /etc/systemd/system/uomi-ai.service  # Edit paths as needed
 sudo systemctl enable uomi-ai
 sudo systemctl start uomi-ai
 ```
+## Quick Usage Example (uomi-node-ai)
+
+Here’s how to quickly get started with the `uomi-node-ai` agent interface:
+
+```bash
+# Clone the repository
+git clone https://github.com/Uomi-network/uomi-node-ai.git
+cd uomi-node-ai
+
+# Create and activate a Python environment
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the AI interface (adjust command as needed)
+python uomi_ai.py --help
+
+# Example: Prompt the AI agent for a response
+python uomi_ai.py --prompt "What's the latest block on UOMI Testnet?"
 
 ## 📊 Monitoring
 
